@@ -35,7 +35,7 @@ public class MayBatch5 {
 		
 					
 				
-				WebElement column2 = columns.get(0);
+				WebElement column2 = columns.get(2);
 				String s2 = column2.getText();
                 System.out.println(s2);	
                     

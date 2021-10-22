@@ -28,6 +28,8 @@ public class MayBatch9 {
         String windowHandle = driver.getWindowHandle();
         Set<String> windowHandles = driver.getWindowHandles();
         WebElement findElement = driver.findElement(By.id(""));
+               Dimension l = findElement.getSize();
+               
         List<WebElement> findElements = driver.findElements(By.tagName(""));
         WebDriver defaultContent = driver.switchTo().defaultContent();
         WebDriver parentFrame = driver.switchTo().parentFrame();
@@ -40,7 +42,6 @@ public class MayBatch9 {
         Actions a = new Actions (driver);
         
         a.perform(); 
-        
         
 	}
 

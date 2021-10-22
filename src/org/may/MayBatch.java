@@ -24,12 +24,12 @@ public class MayBatch {
 		//WebElement w4 = web.findElement(By.xpath("//*[@alt='Facebook']"));
 		
 		JavascriptExecutor j = (JavascriptExecutor)web;
-		j.executeScript("arguments[0].setAttribute('value','ezhil')", w1,w2);
+		j.executeScript("arguments[1].setAttribute('value','ezhil')", w1);
 		j.executeScript("arguments[0].setAttribute('value','123456')", w2);
 		Object o3 = j.executeScript("return arguments[0].getAttribute('value')",w1);
 		//j.executeScript("return arguments[0].getAttribute()'value')",w4);
 		System.out.println(o3);
-		j.executeScript("arguments[0].click()",w3);
+		//j.executeScript("arguments[0].click()",w3);
 		TakesScreenshot tt = (TakesScreenshot)web;
 		File sur = tt.getScreenshotAs(OutputType.FILE);
 		File f = new File("C:\\Users\\Ezhil\\eclipse-workspace\\MayBatch\\Driver\\screen");
